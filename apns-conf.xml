@@ -8,6 +8,5 @@
         user="*"
         server="*"
         password="*"
-        mmsc="http://mms.vtext.com/servlets/mms"
-    />
+        mmsc="http://mms.vtext.com/servlets/mms" />
 </apns>

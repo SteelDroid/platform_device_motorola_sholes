@@ -1,23 +1,7 @@
-#
 # Copyright (C) 2009 The Android Open Source Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
 
-#
 # This is the product configuration for a generic CDMA sholes,
 # not specialized for any geography.
-#
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
@@ -130,7 +114,7 @@ $(call inherit-product-if-exists, vendor/motorola/sholes/sholes-vendor.mk)
 $(call inherit-product, build/target/product/small_base.mk)
 
 #Add additional locales and set the en_US as default
-PRODUCT_LOCALES += ar_EG ar_IL en_CA en_IN en_NZ en_ZA fr_CA he_IL hi_IN id_ID ja_JP ko_KR nl_NL pt_BR pt_PT ru_RU th_TH tl_PH uk_UA vi_VN zh_CN zh_HK zh_TW
+#PRODUCT_LOCALES += ar_EG ar_IL en_CA en_IN en_NZ en_ZA fr_CA he_IL hi_IN id_ID ja_JP ko_KR nl_NL pt_BR pt_PT ru_RU th_TH tl_PH uk_UA vi_VN zh_CN zh_HK zh_TW
 PRODUCT_DEFAULT_LANGUAGE := en_US
 
 PRODUCT_NAME := generic_sholes
