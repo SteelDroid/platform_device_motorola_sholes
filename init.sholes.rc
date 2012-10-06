@@ -152,6 +152,10 @@ service dhcpcd_tiwlan0 /system/bin/dhcpcd -ABKL
     disabled
     oneshot
 
+service iprenew_tiwlan0 /system/bin/dhcpcd -n
+    disabled
+    oneshot
+
 service battd /system/bin/battd
     socket battdsock stream 0660 root mount
     oneshot
