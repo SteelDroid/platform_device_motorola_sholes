@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2010 The Android Open Source Project -->
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
 <!DOCTYPE MediaSettings [
 <!ELEMENT MediaSettings (CamcorderProfiles,
                          EncoderOutputFileFormat+,
@@ -58,8 +71,10 @@
 <!ATTLIST AudioDecoderCap name (wma) #REQUIRED>
 <!ATTLIST AudioDecoderCap enabled (true|false) #REQUIRED>
 ]>
-<!-- This file is used to declare the multimedia profiles and capabilities
-     on an android-powered device. -->
+<!--
+     This file is used to declare the multimedia profiles and capabilities
+     on an android-powered device.
+-->
 <MediaSettings>
     <!-- Each camcorder profile defines a set of predefined configuration parameters -->
     <CamcorderProfiles>
@@ -100,12 +115,15 @@
 
     </CamcorderProfiles>
 
+
     <EncoderOutputFileFormat name="3gp" />
     <EncoderOutputFileFormat name="mp4" />
 
-    <!-- If a codec is not enabled, it is invisible to the applications
+    <!--
+         If a codec is not enabled, it is invisible to the applications
          In other words, the applications won't be able to use the codec
-         or query the capabilities of the codec at all if it is disabled -->
+         or query the capabilities of the codec at all if it is disabled
+    -->
     <VideoEncoderCap name="h264" enabled="true"
         minBitRate="64000" maxBitRate="8000000"
         minFrameWidth="176" maxFrameWidth="720"
@@ -134,11 +152,13 @@
         minSampleRate="8000" maxSampleRate="8000"
         minChannels="1" maxChannels="1" />
 
-    <!-- FIXME:
+    <!--
+        FIXME:
         We do not check decoder capabilities at present
         At present, we only check whether windows media is visible
         for TEST applications. For other applications, we do
-        not perform any checks at all. -->
+        not perform any checks at all.
+    -->
     <VideoDecoderCap name="wmv" enabled="true"/>
     <AudioDecoderCap name="wma" enabled="true"/>
 </MediaSettings>

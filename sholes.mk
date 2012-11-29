@@ -1,8 +1,3 @@
-# Copyright (C) 2009 The Android Open Source Project
-
-# This is the product configuration for a generic CDMA sholes,
-# not specialized for any geography.
-
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
@@ -20,7 +15,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.error.receiver.system.apps=com.google.android.feedback \
 	ro.setupwizard.enterprise_mode=1 \
 	ro.com.google.clientidbase=android-verizon \
-	ro.com.google.locationfeatures=1 \
+	ro.com.google.locationfeatures=0 \
 	ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
 	ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
 	ro.cdma.home.operator.numeric=310004 \
@@ -29,7 +24,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.cdma.data_retry_config=default_randomization=2000,0,0,120000,180000,540000,960000 \
 	ro.config.vc_call_vol_steps=7 \
 	ro.telephony.call_ring.multiple=false \
-	ro.telephony.call_ring.delay=3000 \
+	ro.telephony.call_ring.delay=600 \
 	ro.url.safetylegal=http://www.motorola.com/staticfiles/Support/legal/?model=A855 \
 	ro.setupwizard.enable_bypass=1 \
 	ro.media.dec.jpeg.memcap=20000000
@@ -114,7 +109,6 @@ $(call inherit-product-if-exists, vendor/motorola/sholes/sholes-vendor.mk)
 $(call inherit-product, build/target/product/small_base.mk)
 
 #Add additional locales and set the en_US as default
-#PRODUCT_LOCALES += ar_EG ar_IL en_CA en_IN en_NZ en_ZA fr_CA he_IL hi_IN id_ID ja_JP ko_KR nl_NL pt_BR pt_PT ru_RU th_TH tl_PH uk_UA vi_VN zh_CN zh_HK zh_TW
 PRODUCT_DEFAULT_LANGUAGE := en_US
 
 PRODUCT_NAME := generic_sholes
