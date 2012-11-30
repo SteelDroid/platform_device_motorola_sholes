@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <apns version="6">
     <apn carrier="Verizon"
         mcc="310"
@@ -8,6 +7,5 @@
         user="*"
         server="*"
         password="*"
-        mmsc="http://mms.vtext.com/servlets/mms"
-    />
+        mmsc="http://mms.vtext.com/servlets/mms" />
 </apns>

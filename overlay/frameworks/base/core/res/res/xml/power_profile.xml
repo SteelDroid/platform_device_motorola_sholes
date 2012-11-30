@@ -32,12 +32,14 @@
   <item name="dsp.video">88</item>
   <item name="radio.active">300</item>
   <item name="gps.on">170</item>
-  <item name="battery.capacity">1390</item>  
+  <item name="battery.capacity">1390</item>
   <item name="radio.scanning">70</item>
+
   <array name="radio.on"> <!-- Strength 0 to BINS-1 -->
-      <value>3</value>
-      <value>3</value>
+    <value>3</value>
+    <value>3</value>
   </array>
+
   <array name="cpu.speeds">
     <value>245000</value>
     <value>384000</value>
@@ -52,8 +54,10 @@
     <value>844800</value>
     <value>998400</value>
   </array>
+
   <!-- Power consumption in suspend -->
   <item name="cpu.idle">4</item>
+
   <!-- Power consumption at different speeds -->
   <array name="cpu.active">
       <value>66.6</value>
@@ -69,6 +73,7 @@
       <value>148.5</value>
       <value>168.4</value>
   </array>
+
   <!-- This is the battery capacity in mAh -->
   <item name="battery.capacity">1390</item>
 </device>
