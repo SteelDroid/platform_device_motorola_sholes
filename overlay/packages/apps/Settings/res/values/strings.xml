@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2009 The Android Open Source Project -->
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Strings for Dialog yes button -->
     <string name="yes">"Yes"</string>
@@ -73,7 +87,7 @@
 
     <!-- Used for diagnostic info screens, precise translation isn't needed. Unmounts the SD card from the phone, meaning it will become available for an attached computer  [CHAR LIMIT=25] -->
     <string name="sdcard_unmount" product="nosdcard">Unmount USB storage</string>
-    <!-- Used for diagnostic info screens, precise translation isn't needed. Unmounts the SD card from the phone, meaning it will become available for an attached computer  -->
+    <!-- Used for diagnostic info screens, precise translation isn't needed. Unmounts the SD card from the phone, meaning it will become available for an attached computer -->
     <string name="sdcard_unmount" product="default">Unmount SD card</string>
 
     <!-- Used for diagnostic info screens, precise translation isn't needed. Formats the SD card in the phone, meaning it will be erased and reformatted [CHAR LIMIT=25] -->
@@ -234,7 +248,7 @@
     <!-- Strings for asking to the user whether to allow an app to enable discovery mode -->
     <string name="bluetooth_ask_discovery">"An application on your phone is requesting permission to make your phone discoverable by other Bluetooth devices for <xliff:g id="timeout">%1$d</xliff:g> seconds. Do you want to do this?"</string>
 
-    <!-- Strings for asking to the user whether to allow an app to enable lasting discovery mode  -->
+    <!-- Strings for asking to the user whether to allow an app to enable lasting discovery mode -->
     <string name="bluetooth_ask_lasting_discovery">"An application on your phone is requesting permission to make your phone \u201calways discoverable\u201d by other Bluetooth devices. Do you want to do this?"</string>
 
     <!-- Strings for asking to the user whether to allow an app to enable bluetooth and discovery mode -->
@@ -429,7 +443,7 @@
     <string name="sdcard_settings_bad_removal_status" product="default">SD card was removed while still in use!</string>
     <!-- Label for used bytes on the SD card -->
     <string name="sdcard_settings_used_bytes_label">Used bytes:</string>
-    <!-- Message when it is scanning the SD card for new files [CHAR LIMIT=30]  -->
+    <!-- Message when it is scanning the SD card for new files [CHAR LIMIT=30] -->
     <string name="sdcard_settings_scanning_status" product="nosdcard">Scanning USB storage for media\u2026</string>
     <!-- Message when it is scanning the SD card for new files -->
     <string name="sdcard_settings_scanning_status" product="default">Scanning SD card for media\u2026</string>
@@ -487,7 +501,7 @@
     <string name="airplane_mode_summary">Disable all wireless connections</string>
     <!-- Wireless controls settings screen, setting label -->
     <string name="device_hostname">Device hostname</string>
-    <!-- Wireless controls settings screen, setting option summary text as airplane mode is being enabled (so it is disabling all wireless connections)  -->
+    <!-- Wireless controls settings screen, setting option summary text as airplane mode is being enabled (so it is disabling all wireless connections) -->
     <string name="airplane_mode_turning_on">Disabling wireless connections\u2026</string>
     <!-- Wireless controls settings screen, setting option summary text as airplane mode is being disabled (so it is re-enabling all the wireless conenctions) -->
     <string name="airplane_mode_turning_off">Enabling wireless connections\u2026</string>
@@ -573,7 +587,7 @@
     <!--  Title for PreferenceScreen to change security method: None/Pattern/PIN/Password  -->
     <string name="unlock_set_unlock_launch_picker_change_title">Change screen lock</string>
 
-    <!--  Summary for PreferenceScreen to changeecurity method: None/Pattern/PIN/Password  -->
+    <!--  Summary for PreferenceScreen to changeecurity method: None/Pattern/PIN/Password -->
     <string name="unlock_set_unlock_launch_picker_change_summary">Change or disable pattern, PIN, or password security</string>
 
 
@@ -587,9 +601,9 @@
     <!-- Summary for preference that guides the user through creating an unlock pattern -->
     <string name="unlock_set_unlock_pattern_summary">Draw pattern to unlock screen</string>
 
-    <!-- Title for preference that guides the user through creating an unlock PIN (Personal Identification Number)  -->
+    <!-- Title for preference that guides the user through creating an unlock PIN (Personal Identification Number) -->
     <string name="unlock_set_unlock_pin_title">PIN</string>
-    <!-- Summary for preference that guides the user through creating an unlock PIN (Personal Identification Number)  -->
+    <!-- Summary for preference that guides the user through creating an unlock PIN (Personal Identification Number) -->
     <string name="unlock_set_unlock_pin_summary">Enter a numeric PIN to unlock screen</string>
 
     <!-- Title for preference that guides the user through creating an unlock password -->
@@ -676,7 +690,7 @@
     <!--Wireless controls screen, settings summary for the item tot ake you to the bluetooth settings screen -->
     <string name="bluetooth_settings_summary">Manage connections, set device name &amp; discoverability</string>
 
-    <!-- Title for the dialog to enter PIN.  -->
+    <!-- Title for the dialog to enter PIN. -->
     <string name="bluetooth_pairing_request">Bluetooth pairing request</string>
     <!-- Title for the bluetooth device info screen. -->
     <string name="bluetooth_device_info">Bluetooth device info</string>
@@ -694,7 +708,7 @@
     <string name="bluetooth_pairing_accept">Pair</string>
     <!-- Button text for declining an incoming pairing request -->
     <string name="bluetooth_pairing_decline">Don\u0027t Pair</string>
-    <!-- Generic string for remote Bluetooth device  -->
+    <!-- Generic string for remote Bluetooth device -->
     <string name="bluetooth_remote_device">bluetooth device</string>
 
     <!-- Title for BT error dialogs. -->
@@ -1325,7 +1339,7 @@
     <string name="status_signal_strength">Signal strength</string>
     <!-- About phone, status item title, The status for roaming.  For example, the value might be "Not roaming" -->
     <string name="status_roaming">Roaming</string>
-    <!-- About phone, status item title. The cell carrier that the user is connected to.  -->
+    <!-- About phone, status item title. The cell carrier that the user is connected to. -->
     <string name="status_operator">Network</string>
     <!-- About phone, status item title.  The MAC address of the Wi-Fi network adapter. -->
     <string name="status_wifi_mac_address">Wi-Fi MAC address</string>
@@ -1337,9 +1351,9 @@
     <string name="status_up_time">Up time</string>
     <!-- About phone, status item title.  How much time the device has had its main CPU awake. -->
     <string name="status_awake_time">Awake time</string>
-    <!-- SD card & phone storage settings screen heading. This is displayed above items that pertain to the phone's internal storage  -->
+    <!-- SD card & phone storage settings screen heading. This is displayed above items that pertain to the phone's internal storage -->
     <string name="internal_memory">Internal storage</string>
-    <!-- SD card & additional storage settings screen heading. This is displayed above items that pertain to the phone's additional storage  -->
+    <!-- SD card & additional storage settings screen heading. This is displayed above items that pertain to the phone's additional storage -->
     <string name="additional_memory">Additional storage</string>
     <!-- SD card & phone storage settings screen heading. This is displayed above items that pertain to the SD card [CHAR LIMIT=30] -->
     <string name="sd_memory" product="nosdcard">USB storage</string>
@@ -1353,7 +1367,7 @@
     <string name="sd_eject" product="default">Unmount SD card</string>
     <!-- SD card & phone storage settings item title that will result in the phone unmounting the SD card.  This will be done before the user phyiscally removes the SD card from the phone.  Kind of like the "Safely remove" on some operating systems.   [CHAR LIMIT=30] -->
     <string name="sd_eject_summary" product="nosdcard">Unmount the internal USB storage</string>
-    <!-- SD card & phone storage settings item title that will result in the phone unmounting the SD card.  This will be done before the user phyiscally removes the SD card from the phone.  Kind of like the "Safely remove" on some operating systems.   -->
+    <!-- SD card & phone storage settings item title that will result in the phone unmounting the SD card.  This will be done before the user phyiscally removes the SD card from the phone.  Kind of like the "Safely remove" on some operating systems. -->
     <string name="sd_eject_summary" product="default">Unmount the SD card so you can safely remove it</string>
 
     <!-- SD card & phone storage settings item summary that is displayed when no SD card is inserted.  This version of the string can probably never come up on current hardware. [CHAR LIMIT=25] -->
@@ -1376,35 +1390,35 @@
     <string name="sd_format" product="default">Erase SD card</string>
     <!-- SD card & phone storage settings item title that will result in the phone unmounting the SD card.   [CHAR LIMIT=30] -->
     <string name="sd_format_summary" product="nosdcard">Erases all data on the phone\'s internal USB storage, such as music and photos</string>
-    <!-- SD card & phone storage settings item title that will result in the phone unmounting the SD card.   -->
+    <!-- SD card & phone storage settings item title that will result in the phone unmounting the SD card. -->
     <string name="sd_format_summary" product="default">Erases all data on the phone\'s SD card, such as music and photos</string>
     <!-- SD card status when it is not available status -->
     <string name="sd_unavailable">Unavailable</string>
-    <!-- SD card status when it is mounted as read only  -->
+    <!-- SD card status when it is mounted as read only -->
     <string name="read_only">\u0020(Read-only)</string>
     <!-- SD card eject confirmation dialog title   [CHAR LIMIT=25] -->
     <string name="dlg_confirm_unmount_title" product="nosdcard">Unmount USB storage</string>
-    <!-- SD card eject confirmation dialog title   -->
+    <!-- SD card eject confirmation dialog title -->
     <string name="dlg_confirm_unmount_title" product="default">Unmount SD card</string>
     <!-- SD card eject confirmation dialog  [CHAR LIMIT=NONE] -->
     <string name="dlg_confirm_unmount_text" product="nosdcard">If you unmount the USB storage, some applications you are using will stop and may be unavailable until you remount the USB storage.</string>
-    <!-- SD card eject confirmation dialog  -->
+    <!-- SD card eject confirmation dialog -->
     <string name="dlg_confirm_unmount_text" product="default">If you unmount the SD card, some applications you are using will stop and may be unavailable until you remount the SD card.</string>
     <!-- SD card eject error dialog title   [CHAR LIMIT=30] -->
     <string name="dlg_error_unmount_title" product="nosdcard">Unmounting USB storage failed</string>
-    <!-- SD card eject error dialog title   -->
+    <!-- SD card eject error dialog title -->
     <string name="dlg_error_unmount_title" product="default">Unmount SD card failed</string>
     <!-- SD card eject error dialog text   [CHAR LIMIT=NONE] -->
     <string name="dlg_error_unmount_text" product="nosdcard">Cannot unmount USB storage. Try again later.</string>
-    <!-- SD card eject error dialog text   -->
+    <!-- SD card eject error dialog text -->
     <string name="dlg_error_unmount_text" product="default">Cannot unmount SD card. Try again later.</string>
     <!-- SD card unmount informative text   [CHAR LIMIT=NONE] -->
     <string name="unmount_inform_text" product="nosdcard">USB storage will be unmounted.</string>
     <!-- SD card unmount informative text   [CHAR LIMIT=NONE] -->
     <string name="unmount_inform_text" product="default">SD card will be unmounted.</string>
-    <!-- SD card eject progress title   -->
+    <!-- SD card eject progress title -->
     <string name="sd_ejecting_title">Unmounting</string>
-    <!-- SD card eject progress text   -->
+    <!-- SD card eject progress text -->
     <string name="sd_ejecting_summary">Unmount in progress</string>
 
     <!-- Phone info screen, section titles: -->
@@ -1743,9 +1757,9 @@
     </string>
 
     <!-- Applications Settings --> <skip />
-    <!-- Applications settings screen, setting option name for the user to go to the screen to manage installed applications  -->
+    <!-- Applications settings screen, setting option name for the user to go to the screen to manage installed applications -->
     <string name="manageapplications_settings_title">Manage applications</string>
-    <!-- Applications settings screen, setting option summary for the user to go to the screen to manage installed applications  -->
+    <!-- Applications settings screen, setting option summary for the user to go to the screen to manage installed applications -->
     <string name="manageapplications_settings_summary">Manage and remove installed applications</string>
     <!-- Applications settings title, on main settings screen. If clicked, the user is taken to a settings screen full of application settings-->
     <string name="applications_settings">Applications</string>
@@ -1753,9 +1767,9 @@
     <string name="applications_settings_summary">Manage applications, set up quick launch shortcuts</string>
     <!-- Applications settings screen heading. The header for the Application settings screen. -->
     <string name="applications_settings_header">Application settings</string>
-    <!-- Applications settings screen, setting check box title. If checked, the system allows installation of applications that are downloaded from random places, such as web sites.  -->
+    <!-- Applications settings screen, setting check box title. If checked, the system allows installation of applications that are downloaded from random places, such as web sites. -->
     <string name="install_applications">Unknown sources</string>
-    <!-- Applications settings screen, setting check box summary.  This is the summary for "Unknown sources" checkbox  -->
+    <!-- Applications settings screen, setting check box summary.  This is the summary for "Unknown sources" checkbox -->
     <string name="install_unknown_applications">Allow installation of non-Market applications</string>
     <!-- Applications settings screen, message text of alert that appears if user selects the "Unknown sources" check box -->
     <string name="install_all_warning">Your phone and personal data are more vulnerable to attack by applications
@@ -1800,7 +1814,7 @@
     <string name="auto_launch_enable_text">You have selected to launch this application by default for some actions.</string>
     <!-- Manage applications, individual application screen, text under Launch by default heading if the app is NOT a default for actions -->
     <string name="auto_launch_disable_text">No defaults set.</string>
-    <!-- Manage applications, individual application screen, button label under Launch by default heading.  This is used to clear any default actions that may be assigned to this app.  -->
+    <!-- Manage applications, individual application screen, button label under Launch by default heading.  This is used to clear any default actions that may be assigned to this app. -->
     <string name="clear_activities">Clear defaults</string>
     <!-- Manage apps, individual app screen, substituted for the application's label when the app's label CAN NOT be determined.-->
     <string name="unknown">Unknown</string>
@@ -1914,7 +1928,7 @@ found in the list of installed applications.</string>
 
     <!-- Services settings screen, setting option name for the user to go to the screen to view running services -->
     <string name="runningservices_settings_title">Running services</string>
-    <!-- Services settings screen, setting option summary for the user to go to the screen to view running services  -->
+    <!-- Services settings screen, setting option summary for the user to go to the screen to view running services -->
     <string name="runningservices_settings_summary">View and control currently running services</string>
     <!-- Label for a service item when it is restarting -->
     <string name="service_restarting">Restarting</string>
@@ -2048,13 +2062,13 @@ found in the list of installed applications.</string>
 
     <!-- This is for diagnostics screen. The title of a screen with various items realted to launching screens that will giev the user info. For example, it contains "Phone information" and "Battery information" -->
     <string name="testing">Testing</string>
-    <!-- In the Testing screen.  The item title of the activity that shows a bunch of phone-related information.  -->
+    <!-- In the Testing screen.  The item title of the activity that shows a bunch of phone-related information. -->
     <string name="testing_phone_info">Phone information</string>
-    <!-- In the Testing screen. The item title of the activity that shows a bunch of battery-related information.  -->
+    <!-- In the Testing screen. The item title of the activity that shows a bunch of battery-related information. -->
     <string name="testing_battery_info">Battery information</string>
     <!-- In the Testing screen. The item title of the activity that shows a bunch of historical battery-related information. -->
     <string name="testing_battery_history">Battery history</string>
-    <!-- Do not translate. In the Testing screen. The item title of the activity that shows a bunch of SIM-related operations.  -->
+    <!-- Do not translate. In the Testing screen. The item title of the activity that shows a bunch of SIM-related operations. -->
     <string name="testing_sim_toolkit" translatable="false">SIM toolkit</string>
 
     <!-- The title of the item to go into the Quick launch settings. -->
@@ -2065,7 +2079,7 @@ found in the list of installed applications.</string>
     <string name="quick_launch_assign_application">Assign application</string>
     <!-- On the Quick launch settings screen, summary text for the item of letters that are not assigned. See the quick launch "Assign application" for a description of quick launch -->
     <string name="quick_launch_no_shortcut">No shortcut</string>
-    <!-- On the Quick launch settings screen, summary text under the item for each assigned letter.  -->
+    <!-- On the Quick launch settings screen, summary text under the item for each assigned letter. -->
     <string name="quick_launch_shortcut">Search + <xliff:g id="shortcut_letter">%1$s</xliff:g></string>
     <!-- On the Quick launch settings screen, title of "Clear shortcut" confirmation dialog. This is reached by longpressing an item for a shortcut letter.  This allows the user to clear the assigned application for that shortcut letter. -->
     <string name="quick_launch_clear_dialog_title">Clear</string>
@@ -2075,7 +2089,7 @@ found in the list of installed applications.</string>
     <string name="quick_launch_clear_ok_button">OK</string>
     <!-- Clear dialog for quick launch setting box button labels: -->
     <string name="quick_launch_clear_cancel_button">Cancel</string>
-    <!-- Quick launch screen, when assigning an app to a shortcut, this menu item to show a list of all applications.  -->
+    <!-- Quick launch screen, when assigning an app to a shortcut, this menu item to show a list of all applications. -->
     <string name="quick_launch_display_mode_applications">Applications</string>
     <!-- Quick launch screen, when assigning an app to a shortcut, this menu item to show a list of all shortcutable applications -->
     <string name="quick_launch_display_mode_shortcuts">Shortcuts</string>
@@ -2092,7 +2106,7 @@ found in the list of installed applications.</string>
     <!-- Summary for built-in keyboard settings -->
     <string name="builtin_keyboard_settings_summary">Built-in, physical keyboard settings</string>
 
-    <!-- Development Settings.  the title for the item to take the user to Development settings.  Development settings are settings meant for application developers.  -->
+    <!-- Development Settings.  the title for the item to take the user to Development settings.  Development settings are settings meant for application developers. -->
     <string name="development_settings_title">Development</string>
     <!-- Development Settings summary.  The summary of the item to take the user to Development settings.  Development settings are settings meant for application developers. -->
     <string name="development_settings_summary">Set options for application development</string>
@@ -2106,11 +2120,11 @@ found in the list of installed applications.</string>
     <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
     <!-- Setting Checkbox title whether to keep the screen on when plugged in to a power source -->
     <string name="keep_screen_on">Stay awake</string>
-    <!-- setting Checkbox summary whether to keep the screen on when plugged in  -->
+    <!-- setting Checkbox summary whether to keep the screen on when plugged in -->
     <string name="keep_screen_on_summary">Screen will never sleep while charging</string>
     <!-- Setting Checkbox title whether to allow mock locations -->
     <string name="allow_mock_location">Allow mock locations</string>
-    <!-- setting Checkbox summary whether to allow mock locations  -->
+    <!-- setting Checkbox summary whether to allow mock locations -->
     <string name="allow_mock_location_summary">Allow mock locations</string>
     <!-- Setting checkbox title whether to allow killing foreground app by longpress on BACK. -->
     <string name="kill_app_longpress_back">Stop app via long-press</string>
@@ -2242,7 +2256,7 @@ found in the list of installed applications.</string>
     <!-- XXX remove? Strings used for displaying usage statistics -->
     <string name="usage_stats_label">Usage statistics</string>
 
-    <!-- In the Testing screen. The item title of the activity that shows usage statistics.  -->
+    <!-- In the Testing screen. The item title of the activity that shows usage statistics. -->
     <string name="testing_usage_stats">Usage statistics</string>
     <!-- label for text to indicate sort options -->
     <string name="display_order_text">Sort by:</string>
@@ -3011,7 +3025,7 @@ found in the list of installed applications.</string>
     <!-- Widget Picker -->
     <string name="widget_count">(%d widgets)</string>
 
-    <string name="steel_settings_title">Steel Box</string>
+<!--    <string name="steel_settings_title">Steel Box</string>    -->
     <string name="device_settings_title">Device settings</string>
 
     <string name="wimax_settings">4G settings</string>
