@@ -212,4 +212,4 @@ service ohshitbutton /system/bin/reboot
 	class main
 	disabled
 	oneshot
-	keycodes 114 115 116
+	keycodes 114 115 212
