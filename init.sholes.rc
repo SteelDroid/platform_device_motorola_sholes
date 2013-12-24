@@ -11,7 +11,7 @@ on early-boot
     setprop ro.HOME_APP_MEM 6144
     setprop ro.HIDDEN_APP_MEM 7168
     setprop ro.EMPTY_APP_MEM 8192
-    
+
     chmod 0666 /dev/DspBridge
     class_start media_early_init
 
@@ -19,7 +19,7 @@ on boot
 
 # Overwrite what init.rc selected for the memory killer params to match above.
     write /sys/module/lowmemorykiller/parameters/minfree 2048,3072,4096,6144,7168,8192
-    
+
     chown compass compass /dev/lis331dlh
     chmod 660 /dev/lis331dlh
     chown compass compass /dev/akm8973
@@ -89,17 +89,17 @@ on boot
     chown media graphics /dev/video2
 
 # Permissions for lighting
-   chown system system /sys/class/leds/lcd-backlight/als
-   chown system system /sys/class/leds/lcd-backlight/pwm_mode
-   chown system system /sys/class/leds/red/blink
-   chmod 0660 /sys/class/leds/torch-flash/camera_strobe
-   chmod 0660 /sys/class/leds/torch-flash/flash_light
-   chown system system /sys/class/leds/torch-flash/camera_strobe
-   chown system system /sys/class/leds/torch-flash/flash_light
+    chown system system /sys/class/leds/lcd-backlight/als
+    chown system system /sys/class/leds/lcd-backlight/pwm_mode
+    chown system system /sys/class/leds/red/blink
+    chmod 0660 /sys/class/leds/torch-flash/camera_strobe
+    chmod 0660 /sys/class/leds/torch-flash/flash_light
+    chown system system /sys/class/leds/torch-flash/camera_strobe
+    chown system system /sys/class/leds/torch-flash/flash_light
 
 # flashlight
-   chown system camera /sys/class/leds/spotlight/brightness
-   chmod 0660 /sys/class/leds/spotlight/brightness
+    chown system camera /sys/class/leds/spotlight/brightness
+    chmod 0660 /sys/class/leds/spotlight/brightness
 
 # Permissions for 3D
     chmod 0666 /dev/pvrsrvkm
@@ -107,8 +107,8 @@ on boot
 
 # Power Management Settings
     write /sys/devices/platform/ohci.0/usb2/2-3/power/level auto
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 250000
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 600000
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 125000
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1200000
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor ondemand
     write /sys/devices/system/cpu/cpu0/cpufreq/ondemand/up_threshold 93
     write /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate 30000
@@ -180,10 +180,10 @@ service pvrsrv /system/bin/pvrsrvinit
     oneshot
 
 # bugreport is triggered by the KEY_LEFTSHIFT and KEY_MENU keycodes
-service bugreport /system/bin/dumpstate -d -v -o /sdcard/bugreports/bugreport
-    disabled
-    oneshot
-    keycodes 42 139
+#service bugreport /system/bin/dumpstate -d -v -o /sdcard/bugreports/bugreport
+#    disabled
+#    oneshot
+#    keycodes 42 139
 
 service tcmd /system/bin/tcmd
     oneshot
@@ -194,7 +194,7 @@ service ftmipcd /system/bin/ftmipcd
     disabled
 
 service mdm_panicd /system/bin/mdm_panicd
-   oneshot
+    oneshot
 
 on property:ro.bootmode=factorycable
     start tcmd
@@ -202,14 +202,14 @@ on property:ro.bootmode=factorycable
 
 #get BP version and save to misc
 service savebpver /system/bin/SaveBPVer
-   oneshot
+    oneshot
 
 on property:dev.bootcomplete=1
-   start savebpver
+    start savebpver
 
 # press power/volup/voldown to reboot the phone (for those "oh shit" situations)
-service ohshitbutton /system/bin/reboot
-	class main
-	disabled
-	oneshot
-	keycodes 114 115 212
+#service ohshitbutton /system/bin/reboot
+#    class main
+#    disabled
+#    oneshot
+#    keycodes 114 115 212
