@@ -102,7 +102,7 @@
          button (since it's too easy to press the key accidentally as you
          pull the phone out of your pocket.)  So devices that *don't* want
          this behavior should set this flag to false via the resource
-         overlay.  -->
+         overlay. -->
     <bool name="allow_back_key_to_reject_incoming_call">false</bool>
 
     <!-- If true, show an onscreen "Dial" button in the dialer.

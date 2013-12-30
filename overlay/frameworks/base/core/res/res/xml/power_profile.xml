@@ -38,13 +38,13 @@
       <value>3</value>
   </array>
   <array name="cpu.speeds">
-    <value>800000</value>
-    <value>700000</value>
-    <value>600000</value>
-    <value>550000</value>
-    <value>400000</value>
-    <value>250000</value>
-    <value>125000</value>
+      <value>800000</value>
+      <value>700000</value>
+      <value>600000</value>
+      <value>550000</value>
+      <value>400000</value>
+      <value>250000</value>
+      <value>125000</value>
   </array>
   <!-- Power consumption in suspend -->
   <item name="cpu.idle">4</item>

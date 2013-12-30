@@ -22,7 +22,6 @@
 #include <sys/cdefs.h>
 #include <sys/types.h>
 
-
 /*****************************************************************************/
 
 struct sensors_event_t;
@@ -36,7 +35,6 @@ protected:
 
     static int openInput(const char* inputName);
     static int64_t getTimestamp();
-
 
     static int64_t timevalToNano(timeval const& t) {
         return t.tv_sec*1000000000LL + t.tv_usec*1000;

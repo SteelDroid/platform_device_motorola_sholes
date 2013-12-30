@@ -179,12 +179,6 @@ service pvrsrv /system/bin/pvrsrvinit
     user root
     oneshot
 
-# bugreport is triggered by the KEY_LEFTSHIFT and KEY_MENU keycodes
-#service bugreport /system/bin/dumpstate -d -v -o /sdcard/bugreports/bugreport
-#    disabled
-#    oneshot
-#    keycodes 42 139
-
 service tcmd /system/bin/tcmd
     oneshot
     disabled

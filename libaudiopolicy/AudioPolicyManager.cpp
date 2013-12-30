@@ -22,14 +22,12 @@
 
 namespace android {
 
-
-
 // ----------------------------------------------------------------------------
 // AudioPolicyManager for msm7k platform
 // Common audio policy manager code is implemented in AudioPolicyManagerBase class
 // ----------------------------------------------------------------------------
 
-// ---  class factory
+// --- class factory
 
 
 extern "C" AudioPolicyInterface* createAudioPolicyManager(AudioPolicyClientInterface *clientInterface)

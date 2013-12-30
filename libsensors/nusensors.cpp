@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 #define LOG_NDEBUG 0
 #include <hardware/sensors.h>
 #include <fcntl.h>
@@ -99,7 +100,6 @@ sensors_poll_context_t::sensors_poll_context_t()
     mPollFds[lis].fd = mSensors[lis]->getFd();
     mPollFds[lis].events = POLLIN;
     mPollFds[lis].revents = 0;
-
 
     int wakeFds[2];
     int result = pipe(wakeFds);

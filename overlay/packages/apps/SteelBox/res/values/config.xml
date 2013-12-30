@@ -3,7 +3,7 @@
     <!-- Whether or not to display the trackball settings -->
     <bool name="has_trackball">false</bool>
 
-    <!--  Whether or not to display the slider settings -->
+    <!-- Whether or not to display the slider settings -->
     <bool name="has_slider">true</bool>
 
     <!-- Whether or not to display the camera button settings -->
@@ -24,7 +24,7 @@
     <!-- Whether or not to display search button settings -->
     <bool name="has_search_button">true</bool>
 
-    <!--Whether or not  -->
+    <!--Whether or not -->
     <bool name="has_backtrack_minipad">false</bool>
 
     <bool name="has_envelope_key">false</bool>

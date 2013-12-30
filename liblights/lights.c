@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-
 #define LOG_TAG "lights"
 
 #include <cutils/log.h>
@@ -304,7 +303,6 @@ close_lights(struct light_device_t *dev)
     return 0;
 }
 
-
 /******************************************************************************/
 static int open_lights(const struct hw_module_t* module, char const* name,
         struct hw_device_t** device)
@@ -348,7 +346,6 @@ static int open_lights(const struct hw_module_t* module, char const* name,
     *device = (struct hw_device_t*)dev;
     return 0;
 }
-
 
 static struct hw_module_methods_t lights_module_methods = {
     .open =  open_lights,

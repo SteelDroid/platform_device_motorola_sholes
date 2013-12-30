@@ -14,14 +14,12 @@
  * limitations under the License.
  */
 
-
 #include <stdint.h>
 #include <sys/types.h>
 #include <utils/Timers.h>
 #include <utils/Errors.h>
 #include <utils/KeyedVector.h>
 #include <hardware_legacy/AudioPolicyManagerBase.h>
-
 
 namespace android {
 

@@ -22,7 +22,6 @@
 #include <sys/cdefs.h>
 #include <sys/types.h>
 
-
 #include "nusensors.h"
 #include "SensorBase.h"
 #include "InputEventReader.h"
