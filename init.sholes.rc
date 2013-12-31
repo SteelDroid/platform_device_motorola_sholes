@@ -201,8 +201,8 @@ service savebpver /system/bin/SaveBPVer
 on property:dev.bootcomplete=1
     start savebpver
 
-# press power/volup/voldown to reboot the phone (for those "oh shit" situations)
-#service ohshitbutton /system/bin/reboot
+# press power/volup/voldown to reboot the phone (for those "oh shiz" situations)
+#service ohshizbutton /system/bin/reboot
 #    class main
 #    disabled
 #    oneshot

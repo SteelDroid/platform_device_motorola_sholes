@@ -30,14 +30,14 @@ LOCAL_CFLAGS := -DLOG_TAG=\"Sensors\"
 
 LOCAL_SRC_FILES := \
     sensors.c \
-    nusensors.cpp 
+    nusensors.cpp \
     InputEventReader.cpp \
     SensorBase.cpp \
     LightSensor.cpp \
     ProximitySensor.cpp \
     AkmSensor.cpp \
     Lis331.cpp
-				
+
 LOCAL_SHARED_LIBRARIES := liblog libcutils
 LOCAL_PRELINK_MODULE := false
 
