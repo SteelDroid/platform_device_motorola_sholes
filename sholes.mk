@@ -68,7 +68,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     librs_jni \
-    tiwlan.ini \
     dspexec \
     libbridge \
     overlay.omap3 \
@@ -76,7 +75,6 @@ PRODUCT_PACKAGES += \
     libtiOsLib \
     wlan_loader \
     libCustomWifi \
-    wpa_supplicant.conf \
     dhcpcd.conf \
     libOMX.TI.AAC.encode \
     libOMX.TI.AMR.encode \
@@ -99,14 +97,33 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 PRODUCT_LOCALES += hdpi
 
 PRODUCT_COPY_FILES += \
-    device/motorola/sholes/vold.fstab:system/etc/vold.fstab\
+    device/motorola/sholes/vold.fstab:system/etc/vold.fstab \
     device/motorola/sholes/apns-conf.xml:system/etc/apns-conf.xml
 
-# copy all kernel modules under the "modules" directory to system/lib/modules
-PRODUCT_COPY_FILES += $(shell \
-    find device/motorola/sholes/modules -name '*.ko' \
-    | sed -r 's/^\/?(.*\/)([^/ ]+)$$/\1\2:system\/lib\/modules\/\2/' \
-    | tr '\n' ' ')
+# All the files necessary for ChevyNo1's included kernel
+PRODUCT_COPY_FILES += \
+    device/motorola/sholes/chevyno1_kernel/auth_rpcgss.ko:/system/lib/modules/auth_rpcgss.ko \
+    device/motorola/sholes/chevyno1_kernel/cifs.ko:/system/lib/modules/cifs.ko \
+    device/motorola/sholes/chevyno1_kernel/ext2.ko:/system/lib/modules/ext2.ko \
+    device/motorola/sholes/chevyno1_kernel/ext3.ko:/system/lib/modules/ext3.ko \
+    device/motorola/sholes/chevyno1_kernel/ext4.ko:/system/lib/modules/ext4.ko \
+    device/motorola/sholes/chevyno1_kernel/jbd.ko:/system/lib/modules/jbd.ko \
+    device/motorola/sholes/chevyno1_kernel/jbd2.ko:/system/lib/modules/jbd2.ko \
+    device/motorola/sholes/chevyno1_kernel/lockd.ko:/system/lib/modules/lockd.ko \
+    device/motorola/sholes/chevyno1_kernel/logger.ko:/system/lib/modules/logger.ko \
+    device/motorola/sholes/chevyno1_kernel/mbcache.ko:/system/lib/modules/mbcache.ko \
+    device/motorola/sholes/chevyno1_kernel/nfs.ko:/system/lib/modules/nfs.ko \
+    device/motorola/sholes/chevyno1_kernel/nfs_acl.ko:/system/lib/modules/nfs_acl.ko \
+    device/motorola/sholes/chevyno1_kernel/ntfs.ko:/system/lib/modules/ntfs.ko \
+    device/motorola/sholes/chevyno1_kernel/ramzswap.ko:/system/lib/modules/ramzswap.ko \
+    device/motorola/sholes/chevyno1_kernel/sunrpc.ko:/system/lib/modules/sunrpc.ko \
+    device/motorola/sholes/chevyno1_kernel/tiwlan_drv.ko:/system/lib/modules/tiwlan_drv.ko
+
+# Copy kernel wifi extras
+PRODUCT_COPY_FILES += \
+    device/motorola/sholes/chevyno1_kernel/fw_wlan1271.bin:/system/etc/wifi/fw_wlan1271.bin \
+    device/motorola/sholes/chevyno1_kernel/tiwlan.ini:/system/etc/wifi/tiwlan.ini \
+    device/motorola/sholes/chevyno1_kernel/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/motorola/sholes/kernel
