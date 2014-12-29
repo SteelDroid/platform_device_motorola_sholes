@@ -100,30 +100,33 @@ PRODUCT_COPY_FILES += \
     device/motorola/sholes/vold.fstab:system/etc/vold.fstab \
     device/motorola/sholes/apns-conf.xml:system/etc/apns-conf.xml
 
-# All the files necessary for ChevyNo1's included kernel
+# All the files necessary for Elite Series included kernel
 PRODUCT_COPY_FILES += \
-    device/motorola/sholes/chevyno1_kernel/auth_rpcgss.ko:/system/lib/modules/auth_rpcgss.ko \
-    device/motorola/sholes/chevyno1_kernel/cifs.ko:/system/lib/modules/cifs.ko \
-    device/motorola/sholes/chevyno1_kernel/ext2.ko:/system/lib/modules/ext2.ko \
-    device/motorola/sholes/chevyno1_kernel/ext3.ko:/system/lib/modules/ext3.ko \
-    device/motorola/sholes/chevyno1_kernel/ext4.ko:/system/lib/modules/ext4.ko \
-    device/motorola/sholes/chevyno1_kernel/jbd.ko:/system/lib/modules/jbd.ko \
-    device/motorola/sholes/chevyno1_kernel/jbd2.ko:/system/lib/modules/jbd2.ko \
-    device/motorola/sholes/chevyno1_kernel/lockd.ko:/system/lib/modules/lockd.ko \
-    device/motorola/sholes/chevyno1_kernel/logger.ko:/system/lib/modules/logger.ko \
-    device/motorola/sholes/chevyno1_kernel/mbcache.ko:/system/lib/modules/mbcache.ko \
-    device/motorola/sholes/chevyno1_kernel/nfs.ko:/system/lib/modules/nfs.ko \
-    device/motorola/sholes/chevyno1_kernel/nfs_acl.ko:/system/lib/modules/nfs_acl.ko \
-    device/motorola/sholes/chevyno1_kernel/ntfs.ko:/system/lib/modules/ntfs.ko \
-    device/motorola/sholes/chevyno1_kernel/ramzswap.ko:/system/lib/modules/ramzswap.ko \
-    device/motorola/sholes/chevyno1_kernel/sunrpc.ko:/system/lib/modules/sunrpc.ko \
-    device/motorola/sholes/chevyno1_kernel/tiwlan_drv.ko:/system/lib/modules/tiwlan_drv.ko
+    device/motorola/sholes/kernel_parts/act_mirred.ko:/system/lib/modules/act_mirred.ko \
+    device/motorola/sholes/kernel_parts/act_police.ko:/system/lib/modules/act_police.ko \
+    device/motorola/sholes/kernel_parts/cifs.ko:/system/lib/modules/cifs.ko \
+    device/motorola/sholes/kernel_parts/cls_u32.ko:/system/lib/modules/cls_u32.ko \
+    device/motorola/sholes/kernel_parts/crc-itu-t.ko:/system/lib/modules/crc-itu-t.ko \
+    device/motorola/sholes/kernel_parts/ext2.ko:/system/lib/modules/ext2.ko \
+    device/motorola/sholes/kernel_parts/ext3.ko:/system/lib/modules/ext3.ko \
+    device/motorola/sholes/kernel_parts/ext4.ko:/system/lib/modules/ext4.ko \
+    device/motorola/sholes/kernel_parts/ifb.ko:/system/lib/modules/ifb.ko \
+    device/motorola/sholes/kernel_parts/jbd.ko:/system/lib/modules/jbd.ko \
+    device/motorola/sholes/kernel_parts/jbd2.ko:/system/lib/modules/jbd2.ko \
+    device/motorola/sholes/kernel_parts/output.ko:/system/lib/modules/output.ko \
+    device/motorola/sholes/kernel_parts/ramzswap.ko:/system/lib/modules/ramzswap.ko \
+    device/motorola/sholes/kernel_parts/sch_htb.ko:/system/lib/modules/sch_htb.ko \
+    device/motorola/sholes/kernel_parts/sch_ingress.ko:/system/lib/modules/sch_ingress.ko \
+    device/motorola/sholes/kernel_parts/squashfs.ko:/system/lib/modules/squashfs.ko \
+    device/motorola/sholes/kernel_parts/tiwlan_drv.ko:/system/lib/modules/tiwlan_drv.ko \
+    device/motorola/sholes/kernel_parts/wl127x_test.ko:/system/lib/modules/wl127x_test.ko \
+    device/motorola/sholes/kernel_parts/zram.ko:/system/lib/modules/zram.ko
 
 # Copy kernel wifi extras
 PRODUCT_COPY_FILES += \
-    device/motorola/sholes/chevyno1_kernel/fw_wlan1271.bin:/system/etc/wifi/fw_wlan1271.bin \
-    device/motorola/sholes/chevyno1_kernel/tiwlan.ini:/system/etc/wifi/tiwlan.ini \
-    device/motorola/sholes/chevyno1_kernel/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
+    device/motorola/sholes/kernel_parts/fw_wlan1271.bin:/system/etc/wifi/fw_wlan1271.bin \
+    device/motorola/sholes/kernel_parts/tiwlan.ini:/system/etc/wifi/tiwlan.ini \
+    device/motorola/sholes/kernel_parts/wpa_supplicant.conf:/system/etc/wifi/wpa_supplicant.conf
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/motorola/sholes/kernel
