@@ -93,6 +93,9 @@ PRODUCT_PACKAGES += \
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
+# define product locale
+PRODUCT_LOCALES := en_US
+
 # sholes uses high-density artwork where available
 PRODUCT_LOCALES += hdpi
 
